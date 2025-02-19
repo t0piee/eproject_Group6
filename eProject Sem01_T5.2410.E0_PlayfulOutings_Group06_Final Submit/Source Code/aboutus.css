@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: white;
+}
+
+header {
+    background-color: #28a745;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span {
+    color: #a0e23e;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.register-btn {
+    background: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Phần chứa nội dung chính sẽ chiếm hết không gian còn lại */
+.contact-info {
+    flex: 1;
+}
+
+/* Định dạng footer để nằm ở dưới cùng */
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+.footer-right {
+    width: 50%;
+    text-align: right;
+}
+/* Căn chỉnh danh sách member */
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các member */
+    width: 80%;
+    margin: auto;
+}
+
+/* Định dạng từng member */
+.member {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa avatar và thông tin */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Định dạng avatar */
+.member img {
+    width: 60px; /* Kích thước avatar */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    flex-shrink: 0; /* Đảm bảo avatar không co lại */
+}
+
+/* Căn chỉnh thông tin member */
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    color: white;
+    font-size: 16px;
+}
+
+/* Đảm bảo chữ trong tất cả member đều thẳng hàng */
+.member-list .member-info p {
+    margin: 5px 0;
+    text-align: left;
+    min-height: 40px; /* Đặt chiều cao tối thiểu để tránh lệch hàng */
+    display: flex;
+    align-items: center; /* Căn giữa dòng chữ theo chiều dọc */
+}
+
+/* Đảm bảo avatar và chữ luôn thẳng hàng */
+.member-list .member img,
+.member-list .member-info {
+    align-self: flex-start; /* Giữ tất cả avatar và chữ thẳng hàng theo trục dọc */
+}

@@ -1,0 +1,165 @@
+/* Reset some default styling for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background for the page */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Căn các phần tử ra hai phía */
+    align-items: center;
+}
+
+/* Logo Styling */
+#logo img {
+    max-width: 150px; /* Adjust logo size */
+}
+
+/* Navbar Styling */
+.myNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #28a745;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Điều chỉnh menu */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #218838;
+}
+
+/* Điều chỉnh thanh tìm kiếm */
+.search-container {
+    flex-grow: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Điều chỉnh icon */
+.myNavRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #ccc;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left and Right divs inside section */
+.divLeft, .divRight {
+    flex: 1;
+}
+
+/* Image styling */
+.divLeft img, .divRight img {
+    width: 100%;
+    max-width: 600px; /* Ensure images don’t stretch beyond a certain width */
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel {
+    max-height: 400px;
+}
+
+/* Style for the 'Our Products' heading */
+.products-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+/* Định dạng chung cho sản phẩm */
+.product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Định dạng thẻ sản phẩm */
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Đảm bảo tất cả card có cùng chiều rộng */
+    text-align: center;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.product-card img {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để đảm bảo không méo */
+    border-radius: 10px;
+}
+
